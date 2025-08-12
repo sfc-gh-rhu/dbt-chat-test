@@ -1,0 +1,35 @@
+
+version: 2
+
+models:
+  - name: games_channel
+    description: "Games channel data"
+    columns:
+      - name: timestamp
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: work_channel
+    description: "work channel data"
+    columns:
+      - name: timestamp
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: reactions
+        description: "The number of reactions to a specific message"
+        # this will fail because some messages don't have reactions, as planned.
+        # data_tests:
+          # - not_empty_string
+          
+  - name: general_channel
+    description: "General channel data"
+    columns:
+      - name: timestamp
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null

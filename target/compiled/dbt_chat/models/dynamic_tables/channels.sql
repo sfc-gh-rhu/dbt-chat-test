@@ -1,0 +1,1 @@
+select distinct channel_name from dbt_chat.slack.slack_chat_data

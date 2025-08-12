@@ -1,0 +1,1 @@
+select distinct channel_name from {{ source('dbt_chat', 'slack_chat_data') }}

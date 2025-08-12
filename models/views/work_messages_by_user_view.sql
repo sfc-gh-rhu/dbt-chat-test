@@ -1,0 +1,1 @@
+{{ generate_user_messages_count_view("work") }}

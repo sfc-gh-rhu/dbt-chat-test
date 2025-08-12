@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: dbt_chat
+    database: dbt_chat
+    schema: slack
+    tables:
+      - name: slack_chat_data

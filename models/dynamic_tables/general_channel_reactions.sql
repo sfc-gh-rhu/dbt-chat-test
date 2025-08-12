@@ -1,0 +1,1 @@
+{{ generate_reaction_for_channel("general") }}

@@ -1,0 +1,1 @@
+select * from dbt_chat.slack.slack_chat_logs
